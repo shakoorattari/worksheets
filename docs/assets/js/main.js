@@ -68,10 +68,10 @@ function initializeWorksheetGallery() {
             difficulty: "Medium",
             topic: "Decimals",
             description: "Master decimal arithmetic with step-by-step practice problems.",
-            pdfUrl: "../educational-worksheets/output/PDFs/worksheets/mathematics/grade-07/decimals/medium/add-subtract-decimals.pdf",
-            htmlUrl: "../educational-worksheets/output/HTML/worksheets/mathematics/grade-07/decimals/medium/add-subtract-decimals.html",
-            answerPdfUrl: "../educational-worksheets/output/PDFs/worksheets/mathematics/grade-07/decimals/medium/add-subtract-decimals-answers.pdf",
-            answerHtmlUrl: "../educational-worksheets/output/HTML/worksheets/mathematics/grade-07/decimals/medium/add-subtract-decimals-answers.html"
+            pdfUrl: "output/PDFs/worksheets/mathematics/grade-07/decimals/medium/add-subtract-decimals.pdf",
+            htmlUrl: "output/HTML/worksheets/mathematics/grade-07/decimals/medium/add-subtract-decimals.html",
+            answerPdfUrl: "output/PDFs/worksheets/mathematics/grade-07/decimals/medium/add-subtract-decimals-answers.pdf",
+            answerHtmlUrl: "output/HTML/worksheets/mathematics/grade-07/decimals/medium/add-subtract-decimals-answers.html"
         },
         {
             title: "Map Scale Problems",
@@ -80,10 +80,10 @@ function initializeWorksheetGallery() {
             difficulty: "Medium",
             topic: "Map Scale",
             description: "Apply proportional reasoning to real-world map scale problems.",
-            pdfUrl: "../educational-worksheets/output/PDFs/worksheets/mathematics/grade-07/map-scale/medium/map-scale-problems.pdf",
-            htmlUrl: "../educational-worksheets/output/HTML/worksheets/mathematics/grade-07/map-scale/medium/map-scale-problems.html",
-            answerPdfUrl: "../educational-worksheets/output/PDFs/worksheets/mathematics/grade-07/map-scale/medium/map-scale-problems-answers.pdf",
-            answerHtmlUrl: "../educational-worksheets/output/HTML/worksheets/mathematics/grade-07/map-scale/medium/map-scale-problems-answers.html"
+            pdfUrl: "output/PDFs/worksheets/mathematics/grade-07/map-scale/medium/map-scale-problems.pdf",
+            htmlUrl: "output/HTML/worksheets/mathematics/grade-07/map-scale/medium/map-scale-problems.html",
+            answerPdfUrl: "output/PDFs/worksheets/mathematics/grade-07/map-scale/medium/map-scale-problems-answers.pdf",
+            answerHtmlUrl: "output/HTML/worksheets/mathematics/grade-07/map-scale/medium/map-scale-problems-answers.html"
         },
         {
             title: "Ratio and Proportion Problems",
@@ -92,10 +92,10 @@ function initializeWorksheetGallery() {
             difficulty: "Medium", 
             topic: "Ratios & Proportions",
             description: "Explore ratios and proportions through practical applications.",
-            pdfUrl: "../educational-worksheets/output/PDFs/worksheets/mathematics/grade-07/ratios-proportions/medium/ratio-proportion-problems.pdf",
-            htmlUrl: "../educational-worksheets/output/HTML/worksheets/mathematics/grade-07/ratios-proportions/medium/ratio-proportion-problems.html",
-            answerPdfUrl: "../educational-worksheets/output/PDFs/worksheets/mathematics/grade-07/ratios-proportions/medium/ratio-proportion-problems-answers.pdf",
-            answerHtmlUrl: "../educational-worksheets/output/HTML/worksheets/mathematics/grade-07/ratios-proportions/medium/ratio-proportion-problems-answers.html"
+            pdfUrl: "output/PDFs/worksheets/mathematics/grade-07/ratios-proportions/medium/ratio-proportion-problems.pdf",
+            htmlUrl: "output/HTML/worksheets/mathematics/grade-07/ratios-proportions/medium/ratio-proportion-problems.html",
+            answerPdfUrl: "output/PDFs/worksheets/mathematics/grade-07/ratios-proportions/medium/ratio-proportion-problems-answers.pdf",
+            answerHtmlUrl: "output/HTML/worksheets/mathematics/grade-07/ratios-proportions/medium/ratio-proportion-problems-answers.html"
         },
         {
             title: "Organizing and Presenting Data",
@@ -104,10 +104,10 @@ function initializeWorksheetGallery() {
             difficulty: "Hard",
             topic: "Data & Statistics",
             description: "Advanced data analysis and presentation techniques for exam preparation.",
-            pdfUrl: "../educational-worksheets/output/PDFs/worksheets/mathematics/grade-07/data-presentation/hard/organizing-presenting-data.pdf",
-            htmlUrl: "../educational-worksheets/output/HTML/worksheets/mathematics/grade-07/data-presentation/hard/organizing-presenting-data.html",
-            answerPdfUrl: "../educational-worksheets/output/PDFs/worksheets/mathematics/grade-07/data-presentation/hard/organizing-presenting-data-answers.pdf",
-            answerHtmlUrl: "../educational-worksheets/output/HTML/worksheets/mathematics/grade-07/data-presentation/hard/organizing-presenting-data-answers.html"
+            pdfUrl: "output/PDFs/worksheets/mathematics/grade-07/data-presentation/hard/organizing-presenting-data.pdf",
+            htmlUrl: "output/HTML/worksheets/mathematics/grade-07/data-presentation/hard/organizing-presenting-data.html",
+            answerPdfUrl: "output/PDFs/worksheets/mathematics/grade-07/data-presentation/hard/organizing-presenting-data-answers.pdf",
+            answerHtmlUrl: "output/HTML/worksheets/mathematics/grade-07/data-presentation/hard/organizing-presenting-data-answers.html"
         }
     ];
     
