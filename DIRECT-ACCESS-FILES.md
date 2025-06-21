@@ -61,8 +61,8 @@
 ## ✨ **What's Included**
 
 ### **🔢 Mathematics Content (Grade 7)**
-- **3 complete worksheets** with 40 marks each
-- **120+ practice questions** covering key topics
+- **4 complete worksheets** with varying marks (40-100 marks each)
+- **150+ practice questions** covering key topics
 - **Real-world applications** and problem-solving challenges
 - **Self-assessment sections** for student reflection
 
