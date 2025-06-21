@@ -2,13 +2,19 @@
 
 @page {
     size: A4;
-    margin: 2cm 1.5cm;
+    margin: 2cm 1.5cm 2.5cm 1.5cm;
+    @bottom-center {
+        content: "Copyright Shakoor Hussain Attari";
+        font-size: 10pt;
+        font-family: 'Times New Roman', serif;
+        color: #666;
+    }
 }
 
 @media print {
     * {
         -webkit-print-color-adjust: exact !important;
-        color-adjust: exact !important;
+        print-color-adjust: exact !important;
     }
 
     body {
@@ -119,11 +125,49 @@
         page-break-inside: avoid;
     }
 
-    /* Footer space */
+    /* Custom footer styling */
+    .copyright-footer {
+        position: fixed;
+        bottom: 1cm;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 10pt;
+        color: #666;
+        font-family: 'Times New Roman', serif;
+        border-top: 1px solid #ddd;
+        padding-top: 0.2cm;
+        background: white;
+        z-index: 1000;
+    }
+
+    /* Hide any browser-generated footers */
+    @page {
+        margin-bottom: 2.5cm;
+        @bottom-center {
+            content: "Copyright Shakoor Hussain Attari";
+            font-size: 10pt;
+            font-family: 'Times New Roman', serif;
+            color: #666;
+        }
+    }
+
+    /* Custom footer */
     body::after {
-        content: "";
+        content: "Copyright Shakoor Hussain Attari";
         display: block;
-        height: 2cm;
+        position: fixed;
+        bottom: 1cm;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 10pt;
+        color: #666;
+        font-family: 'Times New Roman', serif;
+        border-top: 1px solid #ddd;
+        padding-top: 0.2cm;
+        background: white;
+        z-index: 1000;
     }
 }
 

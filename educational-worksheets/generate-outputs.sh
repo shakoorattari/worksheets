@@ -24,15 +24,20 @@ convert_file() {
     
     echo "📄 Converting $md_file..."
     
-    # Convert to HTML
+    # Convert to HTML with custom footer
     pandoc "$md_file" -t html5 -o "$html_file" --standalone \
-        --metadata title="Educational Material"
+        --css="tools/converters/print-style.css" \
+        --metadata title="Educational Material" \
+        --include-after-body="tools/converters/footer.html"
     
-    # Convert to PDF via Chrome
+    # Convert to PDF via Chrome with enhanced footer suppression
     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
         --headless --disable-gpu \
         --print-to-pdf="$pdf_file" \
-        --print-to-pdf-no-header --print-to-pdf-no-footer \
+        --print-to-pdf-no-header \
+        --no-pdf-header-footer \
+        --disable-features=VizDisplayCompositor \
+        --run-all-compositor-stages-before-draw \
         --virtual-time-budget=5000 \
         "$html_file" 2>/dev/null
     

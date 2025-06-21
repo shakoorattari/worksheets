@@ -25,18 +25,21 @@ convert_worksheet() {
     
     echo "📄 Converting $md_file..."
     
-    # Convert markdown to HTML
+    # Convert markdown to HTML with custom footer
     pandoc "$md_file" -t html5 -o "$html_file" --standalone \
-        --css="../../tools/converters/print-style.css" \
-        --metadata title="Educational Worksheet"
+        --css="print-style.css" \
+        --metadata title="Educational Worksheet" \
+        --include-after-body="footer.html"
     
-    # Convert HTML to PDF using Chrome
+    # Convert HTML to PDF using Chrome with enhanced footer suppression
     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
         --headless \
         --disable-gpu \
         --print-to-pdf="$pdf_file" \
         --print-to-pdf-no-header \
-        --print-to-pdf-no-footer \
+        --no-pdf-header-footer \
+        --disable-features=VizDisplayCompositor \
+        --run-all-compositor-stages-before-draw \
         --virtual-time-budget=5000 \
         "$html_file" 2>/dev/null
     
