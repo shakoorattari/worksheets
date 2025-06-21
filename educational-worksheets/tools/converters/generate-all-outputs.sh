@@ -10,7 +10,7 @@ mkdir -p ../../output/PDFs
 mkdir -p ../../output/HTML
 
 # Copy CSS file to HTML output directory
-cp print-style.css ../../output/HTML/
+cp "./print-style.css" "../../output/HTML/"
 
 # Function to convert markdown to both PDF and HTML
 convert_worksheet() {
@@ -39,8 +39,7 @@ convert_worksheet() {
     
     pandoc "$md_file" -t html5 -o "$html_file" --standalone \
         --css="$css_path" \
-        --metadata title="Educational Worksheet" \
-        --include-after-body="footer.html"
+        --metadata title="Educational Worksheet"
     
     # Convert HTML to PDF using Chrome with enhanced footer suppression
     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
