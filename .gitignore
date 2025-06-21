@@ -1,0 +1,53 @@
+# Educational Worksheets - Git Ignore
+
+# Generated output files
+output/
+*.pdf
+*.html
+
+# Temporary conversion files
+temp/
+tmp/
+
+# MacOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (if using npm tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Pandoc temporary files
+*.tmp
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Log files
+*.log
+
+# Keep important VS Code configuration
+!.vscode/mcp.json
+!.vscode/extensions.json
+
+# Keep documentation
+!README.md
+!**/README.md
