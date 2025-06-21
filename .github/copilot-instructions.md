@@ -121,13 +121,13 @@ local md_file="$1"
 local relative_path="${md_file#../../}"  # Remove base path
 local output_file="../../output/PDFs/${relative_path%.md}.pdf"
 
-# PDF generation with copyright footer
+# PDF generation with sheet name header and copyright footer
 pandoc "$md_file" -t html5 -o "$html_file" --standalone \
     --css="print-style.css" \
     --metadata title="Educational Worksheet" \
     --include-after-body="footer.html"
 
-# Chrome PDF generation
+# Chrome PDF generation with header/footer requirements
 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
     --headless --disable-gpu \
     --print-to-pdf="$pdf_file" \
@@ -138,14 +138,61 @@ pandoc "$md_file" -t html5 -o "$html_file" --standalone \
     "$html_file" 2>/dev/null
 ```
 
+### **PDF Header and Footer Requirements**
+```css
+/* MANDATORY: Always include sheet name in header and copyright in footer */
+@page {
+    size: A4;
+    margin: 2cm 1.5cm 3cm 1.5cm; /* Extra margin for header/footer */
+    
+    @top-center {
+        content: "[Worksheet Name] - Grade [X] Mathematics";
+        font-size: 10pt;
+        font-family: 'Times New Roman', serif;
+        color: #333;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 0.2cm;
+    }
+    
+    @bottom-center {
+        content: "© 2024-2025 Shakoor Hussain Attari | Educational Materials";
+        font-size: 10pt;
+        font-family: 'Times New Roman', serif;
+        color: #666;
+        border-top: 1px solid #ddd;
+        padding-top: 0.2cm;
+    }
+}
+```
+
 ### **CSS Styling Principles**
 ```css
-/* Always prioritize print formatting */
+/* Always prioritize print formatting with header and footer */
 @media print {
-    /* A4 paper optimization */
+    /* A4 paper optimization with space for header/footer */
     @page {
         size: A4;
-        margin: 2cm 1.5cm 2.5cm 1.5cm;
+        margin: 3cm 1.5cm 3cm 1.5cm; /* Extra margins for header/footer */
+        
+        /* MANDATORY: Sheet name in header */
+        @top-center {
+            content: "[Worksheet Name] - Grade [X] Mathematics";
+            font-size: 10pt;
+            font-family: 'Times New Roman', serif;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.2cm;
+        }
+        
+        /* MANDATORY: Copyright in footer */
+        @bottom-center {
+            content: "© 2024-2025 Shakoor Hussain Attari | Educational Materials";
+            font-size: 10pt;
+            font-family: 'Times New Roman', serif;
+            color: #666;
+            border-top: 1px solid #ddd;
+            padding-top: 0.2cm;
+        }
     }
     
     /* Professional typography */
@@ -155,8 +202,14 @@ pandoc "$md_file" -t html5 -o "$html_file" --standalone \
         line-height: 1.5;
     }
     
-    /* Copyright footer */
-    /* Use consistent footer across all materials */
+    /* Header and footer spacing */
+    .worksheet-header {
+        margin-top: 1cm; /* Space for printed header */
+    }
+    
+    .worksheet-footer {
+        margin-bottom: 1cm; /* Space for printed footer */
+    }
 }
 ```
 
@@ -189,7 +242,8 @@ pandoc "$md_file" -t html5 -o "$html_file" --standalone \
 - ✅ **Learning Objectives**: Clear, measurable goals
 - ✅ **Student Info Section**: Name, Date, Class fields
 - ✅ **Self-Assessment**: Confidence checkboxes for each skill
-- ✅ **Copyright Footer**: Proper attribution in all outputs
+- ✅ **Sheet Name Header**: Worksheet title in PDF header
+- ✅ **Copyright Footer**: "© 2024-2025 Shakoor Hussain Attari | Educational Materials" in PDF footer
 - ✅ **Answer Keys**: Complete solutions with explanations
 - ✅ **Curriculum References**: Grade level and difficulty clearly stated
 
