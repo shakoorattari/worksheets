@@ -2,32 +2,24 @@
 
 @page {
     size: A4;
-    margin: 2.5cm 1.5cm 2.5cm 1.5cm; /* Reduced margins for header/footer */
+    margin: 2.5cm 1.5cm 2.5cm 1.5cm;
     
     @top-center {
         content: "Educational Worksheet - Grade Mathematics";
-        font-size: 8pt;
+        font-size: 10pt;
         font-family: 'Times New Roman', serif;
-        color: #666;
-        border-bottom: 0.5px solid #ccc;
-        padding-bottom: 0.1cm;
-    }
-    
-    @top-right {
-        content: "Page " counter(page) " of " counter(pages);
-        font-size: 8pt;
-        font-family: 'Times New Roman', serif;
-        color: #666;
-        font-weight: normal;
+        color: #333;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 0.2cm;
     }
     
     @bottom-center {
         content: "© 2024-2025 Shakoor Hussain Attari | Educational Materials";
-        font-size: 8pt;
+        font-size: 10pt;
         font-family: 'Times New Roman', serif;
-        color: #999;
-        border-top: 0.5px solid #ccc;
-        padding-top: 0.1cm;
+        color: #666;
+        border-top: 1px solid #ddd;
+        padding-top: 0.2cm;
     }
 }
 

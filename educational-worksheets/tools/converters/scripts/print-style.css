@@ -171,23 +171,14 @@
             color: #666;
         }
     }
-
-    /* Custom footer */
-    body::after {
-        content: "Copyright Shakoor Hussain Attari";
-        display: block;
-        position: fixed;
-        bottom: 1cm;
-        left: 0;
-        right: 0;
-        text-align: center;
-        font-size: 10pt;
-        color: #666;
-        font-family: 'Times New Roman', serif;
-        border-top: 1px solid #ddd;
-        padding-top: 0.2cm;
-        background: white;
-        z-index: 1000;
+    
+    /* Header and footer spacing - remove extra margins since @page handles this */
+    .worksheet-header {
+        margin-top: 0.5cm;
+    }
+    
+    .worksheet-footer {
+        margin-bottom: 0.5cm;
     }
 }
 
