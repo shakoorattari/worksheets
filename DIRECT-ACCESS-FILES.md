@@ -8,11 +8,13 @@
 - [📄 **Decimals Worksheet**](educational-worksheets/output/PDFs/worksheets/mathematics/grade-07/decimals/medium/add-subtract-decimals.pdf) - Add and Subtract Decimals (40 marks)
 - [📄 **Map Scale Worksheet**](educational-worksheets/output/PDFs/worksheets/mathematics/grade-07/map-scale/medium/map-scale-problems.pdf) - Scale Problems and Applications (40 marks)
 - [📄 **Ratios Worksheet**](educational-worksheets/output/PDFs/worksheets/mathematics/grade-07/ratios-proportions/medium/ratio-proportion-problems.pdf) - Ratios and Direct Proportion (40 marks)
+- [📄 **Data Presentation Worksheet**](educational-worksheets/output/PDFs/worksheets/mathematics/grade-07/data-presentation/hard/organizing-presenting-data.pdf) - Organizing and Presenting Data - Hard Level (100 marks)
 
 ### **✅ Answer Keys**
 - [📄 **Decimals Answer Key**](educational-worksheets/output/PDFs/worksheets/mathematics/grade-07/decimals/medium/add-subtract-decimals-answers.pdf) - Step-by-step solutions
 - [📄 **Map Scale Answer Key**](educational-worksheets/output/PDFs/worksheets/mathematics/grade-07/map-scale/medium/map-scale-problems-answers.pdf) - Detailed solutions  
 - [📄 **Ratios Answer Key**](educational-worksheets/output/PDFs/worksheets/mathematics/grade-07/ratios-proportions/medium/ratio-proportion-problems-answers.pdf) - Complete solutions
+- [📄 **Data Presentation Answer Key**](educational-worksheets/output/PDFs/worksheets/mathematics/grade-07/data-presentation/hard/organizing-presenting-data-answers.pdf) - Complete solutions with teaching notes
 
 ### **📋 Documentation**
 - [📄 **Curriculum Alignment**](educational-worksheets/output/PDFs/docs/curriculum-standards/mathematics-alignment.pdf) - Standards and requirements
@@ -25,11 +27,13 @@
 - [🌐 **Decimals Worksheet**](educational-worksheets/output/HTML/worksheets/mathematics/grade-07/decimals/medium/add-subtract-decimals.html) - View online or print from browser
 - [🌐 **Map Scale Worksheet**](educational-worksheets/output/HTML/worksheets/mathematics/grade-07/map-scale/medium/map-scale-problems.html) - View online or print from browser
 - [🌐 **Ratios Worksheet**](educational-worksheets/output/HTML/worksheets/mathematics/grade-07/ratios-proportions/medium/ratio-proportion-problems.html) - View online or print from browser
+- [🌐 **Data Presentation Worksheet**](educational-worksheets/output/HTML/worksheets/mathematics/grade-07/data-presentation/hard/organizing-presenting-data.html) - View online or print from browser
 
 ### **✅ Answer Keys**
 - [🌐 **Decimals Answer Key**](educational-worksheets/output/HTML/worksheets/mathematics/grade-07/decimals/medium/add-subtract-decimals-answers.html) - View solutions online
 - [🌐 **Map Scale Answer Key**](educational-worksheets/output/HTML/worksheets/mathematics/grade-07/map-scale/medium/map-scale-problems-answers.html) - View solutions online
 - [🌐 **Ratios Answer Key**](educational-worksheets/output/HTML/worksheets/mathematics/grade-07/ratios-proportions/medium/ratio-proportion-problems-answers.html) - View solutions online
+- [🌐 **Data Presentation Answer Key**](educational-worksheets/output/HTML/worksheets/mathematics/grade-07/data-presentation/hard/organizing-presenting-data-answers.html) - View solutions online
 
 ### **📋 Documentation**
 - [🌐 **Curriculum Alignment**](educational-worksheets/output/HTML/docs/curriculum-standards/mathematics-alignment.html) - View standards online
