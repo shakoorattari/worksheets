@@ -8,14 +8,17 @@ A comprehensive, professionally organized collection of educational worksheets d
 
 ## 🎯 Quick Start
 
-### **📖 For Immediate Use:**
+### **�️ For Non-Technical Users (Teachers, Parents, Students):**
+**📋 [→ DIRECT ACCESS TO ALL FILES ←](DIRECT-ACCESS-FILES.md)** - Click here for ready-to-print PDFs and web-friendly files!
+
+### **🔧 For Developers/Technical Users:**
 ```bash
 cd educational-worksheets
 # Browse: worksheets/mathematics/grade-07/[topic]/medium/
 # Check answers: answer-keys/mathematics/grade-07/answer-keys.md
 ```
 
-### **🖨️ Generate PDFs:**
+### **🖨️ Generate New PDFs:**
 ```bash
 cd educational-worksheets/tools/converters
 ./convert-all-worksheets.sh

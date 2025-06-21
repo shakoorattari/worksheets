@@ -1,0 +1,33 @@
+@media print {
+    body { 
+        font-family: Arial, sans-serif; 
+        font-size: 12pt; 
+        line-height: 1.4;
+        margin: 1cm;
+    }
+    h1, h2 { 
+        color: black; 
+        page-break-after: avoid;
+    }
+    .page-break { 
+        page-break-before: always; 
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 { color: #2c3e50; border-bottom: 3px solid #3498db; }
+h2 { color: #34495e; border-bottom: 1px solid #bdc3c7; }
+h3 { color: #7f8c8d; }
+
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+th { background-color: #f2f2f2; }
+
+code { background-color: #f8f9fa; padding: 2px 4px; border-radius: 3px; }

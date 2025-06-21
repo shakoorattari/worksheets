@@ -1,9 +1,7 @@
 # Educational Worksheets - Git Ignore
 
-# Generated output files
-output/
-*.pdf
-*.html
+# Note: We include generated PDF and HTML files for non-technical users
+# who need direct access to ready-to-print materials
 
 # Temporary conversion files
 temp/
