@@ -145,7 +145,7 @@
     @page {
         margin-bottom: 2.5cm;
         @bottom-center {
-            content: "© 2024-2025 Shakoor Hussain Attari | Educational Materials";
+            content: "Copyright Shakoor Hussain Attari";
             font-size: 10pt;
             font-family: 'Times New Roman', serif;
             color: #666;
@@ -154,7 +154,7 @@
 
     /* Custom footer */
     body::after {
-        content: "© 2024-2025 Shakoor Hussain Attari | Educational Materials";
+        content: "Copyright Shakoor Hussain Attari";
         display: block;
         position: fixed;
         bottom: 1cm;
