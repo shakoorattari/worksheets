@@ -9,6 +9,9 @@ echo "🔄 Generating all PDF and HTML outputs from worksheets..."
 mkdir -p ../../output/PDFs
 mkdir -p ../../output/HTML
 
+# Copy CSS file to HTML output directory
+cp print-style.css ../../output/HTML/
+
 # Function to convert markdown to both PDF and HTML
 convert_worksheet() {
     local md_file="$1"
@@ -25,9 +28,17 @@ convert_worksheet() {
     
     echo "📄 Converting $md_file..."
     
-    # Convert markdown to HTML with custom footer
+    # Convert markdown to HTML with custom footer and correct CSS path
+    # Calculate relative path to CSS file from the HTML file location
+    local depth=$(echo "$relative_path" | tr -cd '/' | wc -c)
+    local css_path=""
+    for ((i=0; i<depth; i++)); do
+        css_path="../$css_path"
+    done
+    css_path="${css_path}print-style.css"
+    
     pandoc "$md_file" -t html5 -o "$html_file" --standalone \
-        --css="print-style.css" \
+        --css="$css_path" \
         --metadata title="Educational Worksheet" \
         --include-after-body="footer.html"
     
