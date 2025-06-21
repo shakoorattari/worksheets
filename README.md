@@ -1,4 +1,29 @@
-# 📚 Educational Worksheets Repository
+# 📚 Edu## 🎯 Quick Start
+
+### **📄 For Non-Technical Users (Teachers, Parents, Students):**
+**📋 [→ DIRECT ACCESS TO ALL FILES ←](DIRECT-ACCESS-FILES.md)** 
+
+**Click above for instant access to:**
+- ✅ **Ready-to-print PDF worksheets** (just click & print!)
+- ✅ **Web-friendly HTML versions** (view on any device)
+- ✅ **Complete answer keys** with step-by-step solutions
+- ✅ **Zero technical setup required** - works immediately!
+
+*Perfect for educators who need materials right now!*
+
+### **🔧 For Developers/Technical Users:**
+```bash
+cd educational-worksheets
+# Browse: worksheets/mathematics/grade-07/[topic]/medium/
+# Check answers: answer-keys/mathematics/grade-07/answer-keys.md
+```
+
+### **🖨️ Generate New PDFs & HTML:**
+```bash
+cd educational-worksheets/tools/converters
+./generate-all-outputs.sh
+# All outputs appear in: educational-worksheets/output/
+```s Repository
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Multi-Grade](https://img.shields.io/badge/Grades-1--12-blue.svg)](https://github.com/shakoorattari/worksheets)
