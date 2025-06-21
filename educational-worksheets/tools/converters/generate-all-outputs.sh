@@ -62,13 +62,6 @@ if [[ -d "../../worksheets" ]]; then
     done
 fi
 
-# Convert answer keys (from the correct path)
-if [[ -d "../../answer-keys" ]]; then
-    find ../../answer-keys -name "*.md" -type f | while read -r file; do
-        convert_worksheet "$file"
-    done
-fi
-
 # Convert documentation (from the correct path)
 if [[ -d "../../docs" ]]; then
     find ../../docs -name "*.md" -type f | while read -r file; do
