@@ -49,3 +49,7 @@ yarn-error.log*
 # Keep documentation
 !README.md
 !**/README.md
+
+//ignore angular related files
+.angular/
+node_modules/
