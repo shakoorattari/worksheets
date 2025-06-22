@@ -2,15 +2,16 @@
 
 # Generate all PDF and HTML outputs from the new worksheet structure
 # This script finds all markdown files and converts them to PDF and HTML
+# Outputs directly to /docs/output/ for GitHub Pages deployment
 
 echo "🔄 Generating all PDF and HTML outputs from worksheets..."
 
-# Create output directories
-mkdir -p ../../output/PDFs
-mkdir -p ../../output/HTML
+# Create output directories in the correct location for GitHub Pages
+mkdir -p ../../../docs/output/PDFs
+mkdir -p ../../../docs/output/HTML
 
 # Copy CSS file to HTML output directory
-cp "./print-style.css" "../../output/HTML/"
+cp "./print-style.css" "../../../docs/output/HTML/"
 
 # Function to convert markdown to both PDF and HTML
 convert_worksheet() {
@@ -20,11 +21,11 @@ convert_worksheet() {
     local base_name=$(basename "$md_file" .md)
     
     # Create subdirectories in output to match source structure
-    mkdir -p "../../output/PDFs/$dir_path"
-    mkdir -p "../../output/HTML/$dir_path"
+    mkdir -p "../../../docs/output/PDFs/$dir_path"
+    mkdir -p "../../../docs/output/HTML/$dir_path"
     
-    local html_file="../../output/HTML/${relative_path%.md}.html"
-    local pdf_file="../../output/PDFs/${relative_path%.md}.pdf"
+    local html_file="../../../docs/output/HTML/${relative_path%.md}.html"
+    local pdf_file="../../../docs/output/PDFs/${relative_path%.md}.pdf"
     
     echo "📄 Converting $md_file..."
     
@@ -91,12 +92,12 @@ fi
 
 echo ""
 echo "🎉 All outputs generated successfully!"
-echo "📁 Check the output/ folder for:"
+echo "📁 Check the /docs/output/ folder for:"
 echo "   📄 PDF files (ready to print)"
 echo "   🌐 HTML files (web-friendly)"
 echo ""
 echo "📊 Summary:"
-find ../../output -name "*.pdf" | wc -l | xargs echo "   PDFs created:"
-find ../../output -name "*.html" | wc -l | xargs echo "   HTML files created:"
+find ../../../docs/output -name "*.pdf" | wc -l | xargs echo "   PDFs created:"
+find ../../../docs/output -name "*.html" | wc -l | xargs echo "   HTML files created:"
 echo ""
 echo "🖨️  Ready to use! PDFs are print-ready, HTML files work in any browser"

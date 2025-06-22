@@ -13,16 +13,28 @@
 
 ### **🔧 For Developers/Technical Users:**
 ```bash
-cd educational-worksheets
-# Browse: worksheets/mathematics/grade-07/[topic]/medium/
-# Check answers: answer-keys/mathematics/grade-07/answer-keys.md
+# Generate all materials:
+./generate-all.sh
+
+# Browse source files:
+cd educational-worksheets/worksheets/mathematics/grade-07/[topic]/[difficulty]/
+
+# All outputs go to:
+docs/output/PDFs/     # Print-ready PDFs
+docs/output/HTML/     # Web-friendly HTML
 ```
 
-### **🖨️ Generate New PDFs & HTML:**
+**🔄 New Content Workflow:**
+1. Add markdown files in `educational-worksheets/worksheets/`
+2. Run `./generate-all.sh` 
+3. Files generate directly in `/docs/output/` for GitHub Pages
+4. No duplication, single source of truth!
+
+### **🖨️ Alternative Generation Method:**
 ```bash
 cd educational-worksheets/tools/converters
 ./generate-all-outputs.sh
-# All outputs appear in: educational-worksheets/output/
+# All outputs appear in: /docs/output/ (ready for GitHub Pages)
 ```s Repository
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

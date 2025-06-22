@@ -138,8 +138,9 @@ The Educational Worksheets Repository has been successfully transformed into a *
 ### **Adding New Content**
 1. Create worksheet markdown in appropriate directory
 2. Run generation scripts: `./tools/converters/generate-all-outputs.sh`
-3. Update website data in `/docs/assets/js/main.js`
-4. Commit and push changes
+3. Files are generated directly in `/docs/output/` for GitHub Pages
+4. Update website data in `/docs/assets/js/main.js`
+5. Commit and push changes
 
 ### **Website Updates**
 - Edit files in `/docs` directory
@@ -187,9 +188,11 @@ The Educational Worksheets Repository has been successfully transformed into a *
 - 📱 **Universal Access**: Works on any device, anywhere
 - 🎯 **User-Focused**: Designed for students, teachers, and parents
 
-### **Technical Achievements**
-- 🛠️ **Automated Pipeline**: One command generates all outputs
-- 🎨 **Professional Design**: Modern CSS with accessibility
+### **Technical Excellence**
+- ✅ **Automated Pipeline**: One command generates all outputs
+- ✅ **Single Source**: Files generated directly in `/docs/output/` for GitHub Pages  
+- ✅ **No Duplication**: Efficient file organization without redundancy
+- ✅ **Professional Design**: Modern CSS with accessibility
 - ⚡ **Performance Optimized**: Static site generation
 - 🔧 **Maintainable Code**: Clear structure and documentation
 - 🔒 **Future-Proof**: Scalable and extensible architecture

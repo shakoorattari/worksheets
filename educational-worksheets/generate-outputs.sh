@@ -2,11 +2,12 @@
 
 # Generate PDFs and HTML for all markdown files
 # Run this from educational-worksheets directory
+# Outputs directly to /docs/output/ for GitHub Pages deployment
 
 echo "🔄 Generating all outputs..."
 
-# Create output directories  
-mkdir -p output/PDFs output/HTML
+# Create output directories in the correct location for GitHub Pages
+mkdir -p ../docs/output/PDFs ../docs/output/HTML
 
 # Function to convert a markdown file
 convert_file() {
@@ -15,12 +16,12 @@ convert_file() {
     local dir_path=$(dirname "$rel_path")
     local base_name=$(basename "$md_file" .md)
     
-    # Create output subdirectories
-    mkdir -p "output/PDFs/$dir_path"
-    mkdir -p "output/HTML/$dir_path"
+    # Create output subdirectories in the correct location
+    mkdir -p "../docs/output/PDFs/$dir_path"
+    mkdir -p "../docs/output/HTML/$dir_path"
     
-    local pdf_file="output/PDFs/${rel_path%.md}.pdf"
-    local html_file="output/HTML/${rel_path%.md}.html"
+    local pdf_file="../docs/output/PDFs/${rel_path%.md}.pdf"
+    local html_file="../docs/output/HTML/${rel_path%.md}.html"
     
     echo "📄 Converting $md_file..."
     
