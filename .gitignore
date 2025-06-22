@@ -49,3 +49,9 @@ yarn-error.log*
 # Keep documentation
 !README.md
 !**/README.md
+
+# ignore angular files
+.angular/
+dist/
+# Ignore build artifacts
+build/

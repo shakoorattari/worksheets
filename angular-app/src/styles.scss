@@ -1,0 +1,204 @@
+/* Global Styles for Educational Worksheets Platform */
+
+/* Material Design Theme */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+/* Custom Variables */
+:root {
+  --primary-color: #1976d2;
+  --secondary-color: #03dac6;
+  --background-color: #f5f5f5;
+  --surface-color: #ffffff;
+  --text-color: #333333;
+  --text-secondary: #666666;
+  --border-color: #e0e0e0;
+  --shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and HTML */
+html, body {
+  height: 100%;
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Material Design Icons */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+}
+
+/* Educational Worksheet Specific Styles */
+.worksheet-content {
+  font-family: 'Times New Roman', serif;
+  
+  h1, h2, h3 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.3rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  .student-info {
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    margin: 1rem 0;
+    background: var(--surface-color);
+    
+    strong {
+      margin-right: 2rem;
+    }
+  }
+  
+  .learning-objectives {
+    background: #e3f2fd;
+    padding: 1rem;
+    border-left: 4px solid var(--primary-color);
+    margin: 1rem 0;
+    
+    ul {
+      margin-left: 1rem;
+    }
+  }
+  
+  .section {
+    margin: 2rem 0;
+    
+    .question {
+      margin: 1rem 0;
+      padding: 0.5rem;
+      
+      .answer-blank {
+        display: inline-block;
+        border-bottom: 1px solid #000;
+        min-width: 5rem;
+        margin: 0 0.5rem;
+      }
+    }
+  }
+  
+  .self-assessment {
+    background: #f3e5f5;
+    padding: 1rem;
+    border-left: 4px solid var(--secondary-color);
+    margin: 2rem 0;
+    
+    label {
+      display: block;
+      margin: 0.5rem 0;
+      
+      input[type="checkbox"] {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+  
+  .worksheet-content {
+    max-width: 100%;
+    box-shadow: none;
+    border: none;
+  }
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+.p-1 { padding: 0.5rem; }
+.p-2 { padding: 1rem; }
+.p-3 { padding: 1.5rem; }
+.p-4 { padding: 2rem; }
+
+/* Math Expression Styling */
+.math-expression {
+  font-family: 'Times New Roman', serif;
+  font-style: italic;
+  padding: 0.5rem;
+  border: 1px dashed var(--border-color);
+  display: inline-block;
+  margin: 0.25rem;
+  background: #f9f9f9;
+}
+
+/* Loading and Error States */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 1rem;
+  border-left: 4px solid #c62828;
+  margin: 1rem 0;
+}
+
+.success-message {
+  background: #e8f5e8;
+  color: #2e7d32;
+  padding: 1rem;
+  border-left: 4px solid #2e7d32;
+  margin: 1rem 0;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

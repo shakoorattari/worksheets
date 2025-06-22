@@ -1,0 +1,121 @@
+{
+  "worksheets": [
+    {
+      "id": "mathematics-7-decimals-add-subtract",
+      "title": "Adding and Subtracting Decimals",
+      "subject": "mathematics",
+      "grade": 7,
+      "topic": "decimals",
+      "difficulty": "medium",
+      "totalMarks": 40,
+      "estimatedTime": 45,
+      "filePath": "assets/worksheets/mathematics-7-decimals-add-subtract.json",
+      "learningObjectives": [
+        "Add decimals with different decimal places",
+        "Subtract decimals accurately",
+        "Solve decimal word problems"
+      ],
+      "curriculum": "Grade 7 Mathematics",
+      "createdDate": "2024-01-15T00:00:00.000Z",
+      "modifiedDate": "2024-01-15T00:00:00.000Z"
+    },
+    {
+      "id": "mathematics-7-map-scale-problems",
+      "title": "Map Scale and Distance Problems",
+      "subject": "mathematics",
+      "grade": 7,
+      "topic": "map-scale",
+      "difficulty": "medium",
+      "totalMarks": 35,
+      "estimatedTime": 40,
+      "filePath": "assets/worksheets/mathematics-7-map-scale-problems.json",
+      "learningObjectives": [
+        "Read and interpret map scales",
+        "Calculate real distances using map scale",
+        "Solve scale and proportion problems"
+      ],
+      "curriculum": "Grade 7 Mathematics",
+      "createdDate": "2024-01-15T00:00:00.000Z",
+      "modifiedDate": "2024-01-15T00:00:00.000Z"
+    },
+    {
+      "id": "mathematics-7-ratios-proportions",
+      "title": "Ratios and Proportions",
+      "subject": "mathematics",
+      "grade": 7,
+      "topic": "ratios-proportions",
+      "difficulty": "medium",
+      "totalMarks": 35,
+      "estimatedTime": 40,
+      "filePath": "assets/worksheets/mathematics-7-ratios-proportions.json",
+      "learningObjectives": [
+        "Simplify ratios to their lowest terms",
+        "Set up and solve proportion equations",
+        "Apply ratios and proportions to real-world problems"
+      ],
+      "curriculum": "Grade 7 Mathematics",
+      "createdDate": "2024-01-15T00:00:00.000Z",
+      "modifiedDate": "2024-01-15T00:00:00.000Z"
+    },
+    {
+      "id": "mathematics-7-organizing-presenting-data",
+      "title": "Organizing and Presenting Data",
+      "subject": "mathematics",
+      "grade": 7,
+      "topic": "data-presentation",
+      "difficulty": "hard",
+      "totalMarks": 100,
+      "estimatedTime": 60,
+      "filePath": "assets/worksheets/mathematics-7-organizing-presenting-data.json",
+      "learningObjectives": [
+        "Analyze and interpret data from pie charts, waffle diagrams, scatter diagrams, and histograms",
+        "Determine the most appropriate method for presenting different types of data",
+        "Solve complex problems involving data organization and presentation",
+        "Apply critical thinking to evaluate data representation choices"
+      ],
+      "curriculum": "Grade 7 Mathematics",
+      "createdDate": "2024-01-15T00:00:00.000Z",
+      "modifiedDate": "2024-01-15T00:00:00.000Z"
+    },
+    {
+      "id": "mathematics-7-basic-fractions-operations",
+      "title": "Basic Fractions Operations",
+      "subject": "mathematics",
+      "grade": 7,
+      "topic": "fractions",
+      "difficulty": "easy",
+      "totalMarks": 30,
+      "estimatedTime": 35,
+      "filePath": "assets/worksheets/mathematics-7-basic-fractions-operations.json",
+      "learningObjectives": [
+        "Add and subtract fractions with like denominators",
+        "Multiply and divide simple fractions",
+        "Convert between improper fractions and mixed numbers",
+        "Solve basic fraction word problems"
+      ],
+      "curriculum": "Grade 7 Mathematics",
+      "createdDate": "2024-01-15T00:00:00.000Z",
+      "modifiedDate": "2024-01-15T00:00:00.000Z"
+    },
+    {
+      "id": "mathematics-7-simple-equations",
+      "title": "Solving Simple Equations",
+      "subject": "mathematics",
+      "grade": 7,
+      "topic": "algebra",
+      "difficulty": "easy",
+      "totalMarks": 25,
+      "estimatedTime": 30,
+      "filePath": "assets/worksheets/mathematics-7-simple-equations.json",
+      "learningObjectives": [
+        "Solve one-step equations using addition and subtraction",
+        "Solve one-step equations using multiplication and division",
+        "Check solutions by substitution",
+        "Set up simple equations from word problems"
+      ],
+      "curriculum": "Grade 7 Mathematics",
+      "createdDate": "2024-01-15T00:00:00.000Z",
+      "modifiedDate": "2024-01-15T00:00:00.000Z"
+    }
+  ]
+}
